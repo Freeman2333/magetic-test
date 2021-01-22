@@ -233,6 +233,7 @@ section {
 
 .campaigns {
   position: static;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
@@ -244,8 +245,12 @@ section {
   background: var(--primaryShade5);
 }
 
+.campaign-wrapper {
+  margin: 0 auto;
+}
+
 .campaign-wrapper .button {
-  max-width: 200px;
+  width: 200px;
   display: block !important;
   margin: 0 auto 40px;
 }
@@ -290,7 +295,6 @@ section {
 .campaign-wrapper .button {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   outline: none;
-  width: 100%;
   text-align: center;
   display: inline-block;
   border: none;
@@ -332,6 +336,16 @@ section {
 
 .ads__info__extra > p {
   white-space: nowrap;
+}
+
+.ads__image {
+  height: 370px;
+  overflow: hidden;
+}
+
+.ads__image img {
+  min-height: 100%;
+  min-width: 100%;
 }
 
 /* ADS BLOCK CLOSE */
@@ -424,7 +438,7 @@ section {
   transition: max-height 0.3s ease, opacity 0.3s ease 0.3s, margin 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .campaigns {
     flex-direction: column;
     align-items: center;
@@ -434,7 +448,7 @@ section {
     width: 250px;
     margin-bottom: 30px;
   }
-}
+} */
 
 main > * {
   min-width: 53%;
